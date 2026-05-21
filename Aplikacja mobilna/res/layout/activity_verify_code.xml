@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg"
+    android:padding="24dp">
+
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/arrow"
+        android:tint="@color/textMain"
+        android:layout_marginBottom="32dp"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weryfikacja"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/textMain"
+            android:layout_marginBottom="24dp"/>
+
+        <EditText
+            android:id="@+id/etCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kod weryfikacyjny"
+            android:textColor="@color/textMain"
+            android:textColorHint="@color/textSecondary"
+            android:backgroundTint="@color/primary"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textAlignment="center"
+            android:textSize="22sp"/>
+
+        <Button
+            android:id="@+id/btnVerify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Potwierdź"
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/bg"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

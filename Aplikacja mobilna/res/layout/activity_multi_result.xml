@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg"
+    android:padding="24dp">
+
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/arrow"
+        android:tint="@color/textMain"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="true"/>
+
+
+    <TextView
+        android:text="WYNIKI"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/textMain"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:text="LEWO"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textAvgLeft"
+                android:text="0"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:textColor="@color/textMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="AVG"
+                android:textColor="@color/textSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textMinLeft"
+                android:text="0"
+                android:textSize="20sp"
+                android:textColor="@color/textMain"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="MIN"
+                android:textColor="@color/textSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textMaxLeft"
+                android:text="0"
+                android:textSize="20sp"
+                android:textColor="@color/textMain"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="MAX"
+                android:textColor="@color/textSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:text="PRAWO"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textAvgRight"
+                android:text="0"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:textColor="@color/textMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="AVG"
+                android:textColor="@color/textSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textMinRight"
+                android:text="0"
+                android:textSize="20sp"
+                android:textColor="@color/textMain"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="MIN"
+                android:textColor="@color/textSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textMaxRight"
+                android:text="0"
+                android:textSize="20sp"
+                android:textColor="@color/textMain"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="MAX"
+                android:textColor="@color/textSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
